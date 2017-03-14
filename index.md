@@ -2,6 +2,6 @@
 
 Los miembros actuales de Team Burton somos:
 * Antonio Bordes ([abordes96](https://abordes96.github.io/hmis-repo01/)) 
-* Juan Alberrto LLopis([Jalbladewing]( https://jalbladewing.github.io/hmis-repo01/))
+* Juan Alberto Llopis([Jalbladewing]( https://jalbladewing.github.io/hmis-repo01/))
 
 
