@@ -1,6 +1,6 @@
-![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
-
 ## Bienvenido a la página web de Team Burton
+
+![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
 Los miembros actuales de Team Burton son:
 * Antonio Bordes ([abordes96](https://abordes96.github.io/hmis-repo01/)) 
