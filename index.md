@@ -8,6 +8,6 @@ Los miembros actuales de Team Burton son:
 
 Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/root/hmis2017)
 
-Organización --> *Por determinar*
+Organización --> [ualhmis](https://github.com/ualhmis)
 
 
