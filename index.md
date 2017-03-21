@@ -14,6 +14,8 @@ Organización --> [ualhmis](https://github.com/ualhmis)
 
 Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 
+Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
+
 ### Sistemas de control distribuido
 
 [Mercurial](https://www.mercurial-scm.org/)
