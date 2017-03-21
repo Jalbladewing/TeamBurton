@@ -1,4 +1,4 @@
-ï»¿## Bienvenido a la pÃ¡gina web de Team Burton
+## Bienvenido a la página web de Team Burton
 
 ![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
@@ -10,13 +10,16 @@ Los miembros actuales de Team Burton son:
 
 Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/root/hmis2017)
 
-OrganizaciÃ³n --> [ualhmis](https://github.com/ualhmis)
+Organización --> [ualhmis](https://github.com/ualhmis)
 
-Enlace a la pÃ¡gina de Gitlab --> [Gitlab](https://about.gitlab.com/)
+Enlace a la página de Gitlab --> [Gitlab](https://about.gitlab.com/)
+
+Documentación acerca  de como actualizar un repositorio forkeado con las actualizaciones del repositorio original.
+[http://community.logicalbricks.com/node/217](http://community.logicalbricks.com/node/217)
 
 Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering-markdown/)
 
-InformaciÃ³n sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
+Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
 Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 
