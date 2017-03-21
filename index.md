@@ -29,3 +29,11 @@ Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 [Mercurial](https://www.mercurial-scm.org/)
 
 [Bazaar](http://bazaar.canonical.com/en/)
+
+### Herramientas para resolver conflictos
+
+#### DiffMerge
+
+![DiffMerge](https://sourcegear.com/images/screenshots/diffmerge/img_merge_linux.png)
+
+Como instalar y configurar la herramienta --> [Tutorial](https://gist.github.com/mkchandler/2377564)
