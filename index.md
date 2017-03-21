@@ -14,4 +14,8 @@ Organización --> [ualhmis](https://github.com/ualhmis)
 
 Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 
+### Sistemas de control distribuido
 
+[Mercurial](https://www.mercurial-scm.org/)
+
+[Bazaar](http://bazaar.canonical.com/en/)
