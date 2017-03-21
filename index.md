@@ -16,3 +16,11 @@ Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering
 
 Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
+### Sistemas de control distribuido
+
+
+[Mercurial](https://www.mercurial-scm.org/)
+
+
+
+[Bazaar](http://bazaar.canonical.com/en/)
