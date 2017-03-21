@@ -1,4 +1,4 @@
-## Bienvenido a la página web de Team Burton
+﻿## Bienvenido a la página web de Team Burton
 
 ![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
@@ -11,5 +11,7 @@ Los miembros actuales de Team Burton son:
 Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/root/hmis2017)
 
 Organización --> [ualhmis](https://github.com/ualhmis)
+
+Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 
 
