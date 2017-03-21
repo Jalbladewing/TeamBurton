@@ -18,14 +18,11 @@ Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering
 
 Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
-
 Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 
 ### Sistemas de control distribuido
 
 
 [Mercurial](https://www.mercurial-scm.org/)
-
-
 
 [Bazaar](http://bazaar.canonical.com/en/)
