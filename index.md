@@ -13,3 +13,6 @@ Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/roo
 Organización --> [ualhmis](https://github.com/ualhmis)
 
 Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering-markdown/)
+
+Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
+
