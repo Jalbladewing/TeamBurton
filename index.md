@@ -1,4 +1,4 @@
-## Bienvenido a la página web de Team Burton
+﻿## Bienvenido a la página web de Team Burton
 
 ![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
@@ -12,4 +12,6 @@ Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/roo
 
 Organización --> [ualhmis](https://github.com/ualhmis)
 
+Documentación acerca  de como actualizar un repositorio forkeado con las actualizaciones del repositorio original.
+[http://community.logicalbricks.com/node/217](http://community.logicalbricks.com/node/217)
 
