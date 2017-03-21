@@ -1,4 +1,4 @@
-## Bienvenido a la página web de Team Burton
+ï»¿## Bienvenido a la pÃ¡gina web de Team Burton
 
 ![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
@@ -10,10 +10,19 @@ Los miembros actuales de Team Burton son:
 
 Enlace Gitlab de la asignatura --> [Gitlab HMIS2017](http://gitlabdoc.ual.es/root/hmis2017)
 
-Organización --> [ualhmis](https://github.com/ualhmis)
+OrganizaciÃ³n --> [ualhmis](https://github.com/ualhmis)
 
-Enlace a la página de Gitlab --> [Gitlab](https://about.gitlab.com/)
+Enlace a la pÃ¡gina de Gitlab --> [Gitlab](https://about.gitlab.com/)
 
 Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering-markdown/)
 
+InformaciÃ³n sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
+### Sistemas de control distribuido
+
+
+[Mercurial](https://www.mercurial-scm.org/)
+
+
+
+[Bazaar](http://bazaar.canonical.com/en/)
