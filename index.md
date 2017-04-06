@@ -1,4 +1,4 @@
-﻿## Bienvenido a la página web de Team Burton
+## Bienvenido a la página web de Team Burton
 
 ![Team Burton Logo](http://i.imgur.com/fjCf9U1.jpg)
 
@@ -14,6 +14,9 @@ Organización --> [ualhmis](https://github.com/ualhmis)
 
 Enlace a la página de Gitlab --> [Gitlab](https://about.gitlab.com/)
 
+Documentación acerca  de como actualizar un repositorio forkeado con las actualizaciones del repositorio original.
+[http://community.logicalbricks.com/node/217](http://community.logicalbricks.com/node/217)
+
 Tutorial para la web --> [Markdown](https://guides.github.com/features/mastering-markdown/)
 
 Información sobre pull request --> [Pull Request](https://help.github.com/articles/about-pull-requests/)
@@ -26,3 +29,10 @@ Libro de referencia --> [Pro Git Book](https://git-scm.com/book/es/v1)
 [Mercurial](https://www.mercurial-scm.org/)
 
 [Bazaar](http://bazaar.canonical.com/en/)
+
+### Herramientas para resolver conflictos
+
+#### DiffMerge
+
+![DiffMerge](https://sourcegear.com/images/screenshots/diffmerge/img_merge_linux.png)
+Como instalar y configurar la herramienta --> [Tutorial](https://gist.github.com/mkchandler/2377564)
