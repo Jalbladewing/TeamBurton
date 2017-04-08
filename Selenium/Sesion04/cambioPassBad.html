@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://webapphmis20170408044357.azurewebsites.net/" />
+<title>cambioPassBad</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">cambioPassBad</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=registerLink</td>
+	<td></td>
+</tr>
+<!--Registro de un usuario con un email aleatorio-->
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;ual&quot; + Math.floor(Math.random()*15000) + &quot;@ual.es&quot;;}</td>
+	<td>emailrandom</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>${emailrandom}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Hola ${emailrandom}!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Hola ${emailrandom}!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cambiar la contraseña</td>
+	<td></td>
+</tr>
+<!--Seleccionar boton de cambiar password al cargarse la pagina-->
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-danger.validation-summary-errors &gt; ul &gt; li</td>
+	<td>The Contraseña actual field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div/ul/li[2]</td>
+	<td>The Contraseña nueva field is required.</td>
+</tr>
+<!--Password actual incorrecto-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>malPassword</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Incorrect password.</td>
+</tr>
+<!--Password nueva sin mayusculas-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>hola_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>hola_1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one uppercase ('A'-'Z').</td>
+</tr>
+<!--Password nueva sin minusculas-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>HOLA_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>HOLA_1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one lowercase ('a'-'z').</td>
+</tr>
+<!--Password nueva sin numeros-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Hola_aaaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola_aaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one digit ('0'-'9').</td>
+</tr>
+<!--Password nueva sin caracter especial-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Hola1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one non letter or digit character.</td>
+</tr>
+<!--Password demasiado corta-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Ho_1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Ho_1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Contraseña nueva debe tener al menos 6 caracteres de longitud.</td>
+</tr>
+<!--Password nueva no coincide-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola_12345</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>La contraseña nueva y la contraseña de confirmación no coinciden.</td>
+</tr>
+<!--Password actual vacia-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Contraseña actual field is required.</td>
+</tr>
+<!--Password nueva vacia-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>malPassword</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Contraseña nueva field is required.</td>
+</tr>
+<!--Campos vacios-->
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Contraseña actual field is required.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form/div/ul/li[2]</td>
+	<td></td>
+</tr>
+<!--Desconexion-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cerrar sesión</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=loginLink</td>
+	<td>Iniciar sesión</td>
+</tr>
+</tbody></table>
+</body>
+</html>

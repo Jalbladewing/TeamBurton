@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://webapphmis20170408044357.azurewebsites.net/" />
+<title>registroMal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registroMal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=registerLink</td>
+	<td></td>
+</tr>
+<!--Seleccionar registrarse tras cargarse la ventana-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-danger.validation-summary-errors &gt; ul &gt; li</td>
+	<td>The Correo electrónico field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div/ul/li[2]</td>
+	<td>The Contraseña field is required.</td>
+</tr>
+<!--Email incorrecto-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>malcorreo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>H_ola1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>H_ola1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-danger.validation-summary-errors &gt; ul &gt; li</td>
+	<td>The Correo electrónico field is not a valid e-mail address.</td>
+</tr>
+<!--Password demasiado corto-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>buencorreo@hotmail.es</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>A1_</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>A1_</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.text-danger.validation-summary-errors &gt; ul &gt; li</td>
+	<td>El número de caracteres de Contraseña debe ser al menos 6.</td>
+</tr>
+<!--Password sin numeros-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>buencorreo@hotmail.es</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>sinNumeros_</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>sinNumeros_</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one digit ('0'-'9').</td>
+</tr>
+<!--Password sin mayusculas-->
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>sinmayusculas_1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>sinmayusculas_1</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one uppercase ('A'-'Z').</td>
+</tr>
+<!--Password sin minusculas-->
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>SINMINUSCULAS_1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>SINMINUSCULAS_1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one lowercase ('a'-'z').</td>
+</tr>
+<!--Passwords diferentes-->
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>contrasdiferentes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>contrasnocoinciden</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>La contraseña y la contraseña de confirmación no coinciden.</td>
+</tr>
+<!--Password sin caracter especial-->
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>sincaracterespeciaL1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>sincaracterespeciaL1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Passwords must have at least one non letter or digit character.</td>
+</tr>
+<!--Campos vacios-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Correo electrónico field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div/ul/li[2]</td>
+	<td>The Contraseña field is required.</td>
+</tr>
+<!--Password vacia-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>buencorreo@hotmail.es</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Contraseña field is required.</td>
+</tr>
+<!--Email vacio-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>Hola_1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>The Correo electrónico field is required.</td>
+</tr>
+<!--Registro de usuario ya registrado-->
+<!--Registro de un usuario con un email aleatorio-->
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;ual&quot; + Math.floor(Math.random()*15000) + &quot;@ual.es&quot;;}</td>
+	<td>emailrandom</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>${emailrandom}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Hola ${emailrandom}!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cerrar sesión</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=registerLink</td>
+	<td></td>
+</tr>
+<!--Registro del mismo usuario-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>${emailrandom}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Name ${emailrandom} is already taken.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div/ul/li[2]</td>
+	<td>Email '${emailrandom}' is already taken.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
