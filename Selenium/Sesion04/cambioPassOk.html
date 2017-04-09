@@ -46,6 +46,7 @@
 	<td>link=Hola ual10467@ual.es!</td>
 	<td></td>
 </tr>
+<!--Comprobando caso de solo 1 mayúscula, número y carácter.-->
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Cambiar la contraseña</td>
@@ -59,12 +60,131 @@
 <tr>
 	<td>type</td>
 	<td>id=NewPassword</td>
-	<td>ABac12!&quot;</td>
+	<td>0Aaaaa.</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=ConfirmPassword</td>
-	<td>ABac12!&quot;</td>
+	<td>0Aaaaa.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.text-success</td>
+	<td>Su contraseña se ha cambiado.</td>
+</tr>
+<!--Comprobando caso de solo una minúscula, número y carácter.-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cambiar la contraseña</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>0Aaaaa.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>0aAAAA.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>0aAAAA.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.text-success</td>
+	<td>Su contraseña se ha cambiado.</td>
+</tr>
+<!--Comprobando caso límite con solo una minúscula, una mayúscula y un carácter.-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cambiar la contraseña</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>0aAAAA.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>0aA00.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>0aA00.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.text-success</td>
+	<td>Su contraseña se ha cambiado.</td>
+</tr>
+<!--Comprobando caso límite con solo una minúscula, una mayúscula y un número-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cambiar la contraseña</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>0aA00.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>0aA...</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>0aA...</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<!--Restableciendo Contraseña-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cambiar la contraseña</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OldPassword</td>
+	<td>0aA...</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=NewPassword</td>
+	<td>ABab12!&quot;</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ConfirmPassword</td>
+	<td>ABab12!&quot;</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>

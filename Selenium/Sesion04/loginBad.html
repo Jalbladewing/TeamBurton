@@ -16,6 +16,7 @@
 	<td>/</td>
 	<td></td>
 </tr>
+<!--Intento de logueo con cuenta inexistente-->
 <tr>
 	<td>clickAndWait</td>
 	<td>id=loginLink</td>
@@ -41,10 +42,110 @@
 	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
 	<td>Intento de inicio de sesión no válido.</td>
 </tr>
+<!--Intento de logueo sin poner contraseña-->
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>example@ual.es</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.text-danger.field-validation-error &gt; span</td>
+	<td>The Contraseña field is required.</td>
+</tr>
+<!--Intento de logueo sin poner email-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>kkdvk</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.text-danger.field-validation-error &gt; span</td>
+	<td>The Correo electrónico field is required.</td>
+</tr>
+<!--Correo no válido-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>ual10467</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>awdafaff</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.text-danger.field-validation-error &gt; span</td>
+	<td>The Correo electrónico field is not a valid e-mail address.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Intento de inicio de sesión no válido.</td>
+</tr>
+<!--Contraseña incorrecta-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>ual10467@ual.es</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>awdwrr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.validation-summary-errors.text-danger &gt; ul &gt; li</td>
+	<td>Intento de inicio de sesión no válido.</td>
+</tr>
+<!--Intento de inicio de sesión sin poner datos-->
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.text-danger.field-validation-error &gt; span</td>
+	<td>The Correo electrónico field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='loginForm']/form/div[3]/div/span/span</td>
+	<td>The Contraseña field is required.</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
